@@ -23,7 +23,7 @@ public class RegistroPresenze {
 			System.out.println("Scrivi sul file:");
 			
 			try {
-				System.out.println("Scrivi nome della persona");
+				System.out.println("Scrivi il nome del dipendente");
 				String nome = scan.nextLine();
 				
 				System.out.println("Scrivi quanti giorni di presenza ha fatto");
@@ -68,7 +68,7 @@ public class RegistroPresenze {
 		
 		try {
 			Presenza p = new Presenza(segments[0], Integer.parseInt(segments[1]));
-			System.out.println(p);
+			System.out.println(p.nome + " " + p.numPresenze);
 		} catch(NumberFormatException e) {
 			System.out.println( "Error!" );
 		}
