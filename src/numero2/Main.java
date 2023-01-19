@@ -19,8 +19,6 @@ public class Main {
 		ArrayParziale thread2 = new ArrayParziale(l1, 1000, 1999);
 		ArrayParziale thread3 = new ArrayParziale(l1, 2000, 2999);
 		
-
-		
 		thread1.start();
 		thread1.join();
 		thread2.start();
